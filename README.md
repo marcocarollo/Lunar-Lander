@@ -16,6 +16,7 @@ Each model's hyperparameters are tuned using a grid search approach. The results
 
 Final considerations are reported in the presentation.
 
+Notebooks are provided for a better understanding of the code's usage and the results obtained.
 
 ## Training Clips
 
@@ -23,23 +24,28 @@ These training snapshots are captured using a greedy policy after the training p
 provided for comparison:  
 
 **Random** 
- <img src="gifs/random.gif" width="200" height="300"/>
+
+<img src="gifs/random.gif" width="300" height="200"/>
 
 **Monte-Carlo**  
-<img src="gifs/MC.gif" width="200" height="300"/>
+
+<img src="gifs/MC.gif" width="300" height="200"/>
 
 **SARSA**
-<img src="gifs/SARSA.gif" width="200" height="300"/>
+
+<img src="gifs/SARSA.gif" width="300" height="200"/>
 
 **Expected SARSA**
-<img src="gifs/ESARSA.gif" width="200" height="300"/>
+
+<img src="gifs/ESARSA.gif" width="300" height="200"/>
 
 **Q-learning**  
-<img src="gifs/Q.gif" width="200" height="300"/>
+
+<img src="gifs/Q.gif" width="300" height="200"/>
 
 ## Implementation References  
 
-1. Tutor's notebooks [Emanuele Panizon](https://www.ictp.it/member/emanuele-panizon)
+1. [Tutor](https://www.ictp.it/member/emanuele-panizon)'s notebooks 
 2. [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html)
 3. [Solving The Lunar Lander Problem under Uncertainty using Reinforcement Learning](https://arxiv.org/abs/2011.11850)
 
