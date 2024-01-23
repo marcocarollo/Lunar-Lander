@@ -58,10 +58,6 @@ def get_action_epsilon_greedy(Qvalues, s, eps, action_size):
         return a
 
 
-def greedy_policy(self):
-    a = np.argmax(self.Qvalues, axis=2)
-    return a
-
 def nested_list(dim):
     """
         Creates a nested list of dimension dim. Can be seen as an len(dim)-dimensional matrix.
