@@ -9,9 +9,9 @@ provided for comparison:
 ![random](gifs/random.gif)
 
 **Monte-Carlo**  
-![monte-carlo](data/MC.gif)  
+![monte-carlo](gifs/MC.gif)  
 
 
 
 **Q-learning**  
-![q-learning](data/Q.gif)
+![q-learning](gifs/Q.gif)
