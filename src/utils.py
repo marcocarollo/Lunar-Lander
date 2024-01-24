@@ -1,6 +1,15 @@
 import numpy as np
 import scipy
 def discretize_state(state, observation_space):
+    """
+    Smart discretization technique, states closer to the goal are finely discretized, while, after a 
+    threshold, all values collapse into a single state.
+    Parameters
+    ----------
+    state: an 8-dim state, with 6 continuous variables and 2 boolean.
+    observation_state: 8-dim array-like object, containing the threshold
+        for the number of discretized values for each dimension.
+    """
     a, b, c, d, e, f, _, _ = observation_space
     discrete_state = (min(a//2, max(-a//2, int((state[0]) / 0.15))), \
                         min(b-2, max(-1, int((state[1]) / 0.2))), \
@@ -37,7 +46,6 @@ def naive_discretize_state(state):
 def discount_cumsum(x, discount):
     return scipy.signal.lfilter([1], [1, float(-discount)], x[::-1], axis=0)[::-1]
 
-#FIX EVERYTHING WITH SELF, PUT THAT ON ARGUMENTS, CFR VERSION DEL TIPO
 def get_action_epsilon_greedy(Qvalues, s, eps, action_size):
         """
         Chooses action at random using an epsilon-greedy policy wrt the current Q(s,a).
