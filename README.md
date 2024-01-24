@@ -9,6 +9,8 @@ Goal of this project is to solve the [LunarLander-v2](https://gymnasium.farama.o
 - [Expected SARSA](src/ESARSA_lander.py)
 - [Q-Learning](src/Q_lander.py)
 
+To apply these algorithms, the environment is discretized using a tile coding approach. To reduce the effect of the curse of dimensionality, the discretization is performed in a more effective way.
+
 Each model's hyperparameters are tuned using a grid search approach. The results of this analysis are available in the following folders:
 
 - [data](data) folder, for a general statistical analysis of the performance.
