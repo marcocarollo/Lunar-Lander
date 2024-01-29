@@ -11,7 +11,7 @@ The goal of this project is to solve the [LunarLander-v2](https://gymnasium.fara
 
 To apply these algorithms, the environment is discretized using state aggregation. To reduce the effect of the curse of dimensionality, the discretization is performed more effectively.
 
-To tackle this problem even more, a count based exploration technique is implemented in [this notebook](Sarsa_expl_count.ipynb).
+To tackle this problem even further, a count-based exploration technique is implemented in [this notebook](Sarsa_expl_count.ipynb).
 
 Each model's hyperparameters are tuned using a grid search approach. The results of this analysis are available in the following folders:
 
