@@ -1,6 +1,6 @@
 # Lunar-Lander
 
-This repository contains the final project for the Reinforcement Learning course of the Master Degree in Data Science and Scientific Computing, A.Y. 2022-2023. The slides for the final presentation are available [here](Lunar_Lander_presentation.pdf).
+This repository contains the final project for the Reinforcement Learning course of the Master Degree in Data Science and Scientific Computing, A.Y. 2022-2023. The slides for the final presentation are available [here](presentations/Lunar_Lander_presentation.pdf).
 
 The goal of this project is to solve the [LunarLander-v2](https://gymnasium.farama.org/environments/box2d/lunar_lander/) OpenAI Gymnasium environment using various model-free reinforcement learning algorithms, namely:
 
@@ -11,7 +11,7 @@ The goal of this project is to solve the [LunarLander-v2](https://gymnasium.fara
 
 To apply these algorithms, the environment is discretized using state aggregation. To reduce the effect of the curse of dimensionality, the discretization is performed more effectively.
 
-To tackle this problem even further, a count-based exploration technique, based on [4](https://arxiv.org/pdf/1706.08090.pdf) is implemented in [this notebook](presentations/Sarsa_expl_count.ipynb).
+To tackle this problem even further, a count-based exploration technique, based on [[4]](https://arxiv.org/pdf/1706.08090.pdf) is implemented in [this notebook](Sarsa_expl_count.ipynb).
 A brief presentation abount this technique is available [here](presentations/exploration_counts_presentation.pdf).
 
 Each model's hyperparameters are tuned using a grid search approach. The results of this analysis are available in the following folders:
